@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
 import './FoodList.scss';
 import Food from '../Food/Food'
+import { foodData } from '../foodData'
 
 class FoodList extends Component {
     state={
-        foods:[]
+        foods: foodData
     }
     render() {
+        const {foods} = this.state
         return (
             <section className="foodlist">
-                <Food />
+                {foods.map(food => {
+                    return (
+                        <Food key={food.id} food={food}/>
+                    )
+                })}
             </section>
         );
     }
