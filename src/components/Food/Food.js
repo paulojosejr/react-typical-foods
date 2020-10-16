@@ -5,8 +5,14 @@ class Foods extends Component {
     state = {
         showInfo: false
     }
+    handleinfo = () => {
+        this.setState({
+            showInfo: !this.state.showInfo
+        })
+    }
     render() {
-        const{food, img, country, info} = this.props.food
+        const { id, food, img, country, info } = this.props.food
+        const { removeFood } = this.props
         return (
             <article className="food">
                 <div className="img-container">
@@ -14,7 +20,7 @@ class Foods extends Component {
                         src={img}
                         alt=""
                     />
-                    <span className="close-btn">
+                    <span className="close-btn" onClick={() => { removeFood(id) }}>
                         <i className="fas fa-window-close"></i>
                     </span>
                 </div>
@@ -22,12 +28,12 @@ class Foods extends Component {
                     <h3>{food}</h3>
                     <h4>{country}</h4>
                     <h5>info{""}
-                        <span>
-                            <i className="fas fa-caret-square-down"/>
+                        <span onClick={this.handleinfo}>
+                            <i className="fas fa-caret-square-down" />
                         </span>
                     </h5>
                     {this.state.showInfo && <p>{info}</p>}
-                    
+
                 </div>
             </article>
         );
