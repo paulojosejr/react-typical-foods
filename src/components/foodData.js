@@ -30,5 +30,37 @@ export const foodData = [
     country: "Portugal",
     info:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,repellendus!"
+  },
+  {
+    id: 5,
+    food: "Brigadeiro",
+    img: "./img/brigadeiro.jpg",
+    country: "Brazil",
+    info:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,repellendus!"
+  },
+  {
+    id: 6,
+    food: "Canjica",
+    img: "./img/canjica.jpeg",
+    country: "Brazil",
+    info:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,repellendus!"
+  },
+  {
+    id: 7,
+    food: "Coxinha",
+    img: "./img/coxinha.jpg",
+    country: "Brazil",
+    info:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,repellendus!"
+  },
+  {
+    id: 8,
+    food: "Pão de Queijo",
+    img: "./img/pão-de-queijo.jpg",
+    country: "Brazil",
+    info:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,repellendus!"
   }
 ];
