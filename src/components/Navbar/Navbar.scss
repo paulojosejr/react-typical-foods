@@ -1,7 +1,7 @@
 @import '../../index.scss';
 
 .navbar {
-    background: $primaryRed;
+    background: $primaryRedOpaque;
     padding: 0.5rem 1rem;
     display: grid;
     grid-template-columns: auto 1fr;

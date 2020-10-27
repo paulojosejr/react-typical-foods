@@ -1,10 +1,10 @@
 import React from 'react'
 import './Navbar.scss'
-import  logo from '../../logo.png'
+import logo from '../../logo.png'
 
 export default function Navbar() {
     return <nav className="navbar">
-        <img className="logo" src= {logo} alt='food tours logo' />
+        <img className="logo" src={logo} alt='food tours logo' />
         <ul className="nav-links">
             <li>
                 <a href="/" className="nav-link">
@@ -13,12 +13,12 @@ export default function Navbar() {
             </li>
             <li>
                 <a href="/" className="nav-link">
-                    About
+                    Foods
                 </a>
             </li>
             <li>
-                <a href="/" className="nav-link active">
-                    Foods
+                <a href="/" className="nav-link">
+                    About
                 </a>
             </li>
         </ul>
