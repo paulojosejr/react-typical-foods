@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.scss'
 import homevideo from '../../homevideo.mp4'
-import logo from '../../logo.png'
+import logoHome from '../../logoHome.png'
 
 export default function Home() {
     return (
@@ -24,7 +24,7 @@ export default function Home() {
             </video>
 
                 <div className="banner">
-                <img className="logoHome" src={logo} alt='food tours logo' />
+                <img className="logoHome" src={logoHome} alt='food tours logo' />
                     <h1 className="banner-title">Typical Foods</h1>
                     <h2>There is no sincerer love than the love of food.</h2>
                 </div>

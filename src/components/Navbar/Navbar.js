@@ -4,7 +4,9 @@ import logo from '../../logo.png'
 
 export default function Navbar() {
     return <nav className="navbar">
-        <img className="logo" src={logo} alt='food tours logo' />
+        <a href="/">
+            <img className="logo" src={logo} alt='food tours logo' />
+        </a>
         <ul className="nav-links">
             <li>
                 <a href="/" className="nav-link">
@@ -12,7 +14,7 @@ export default function Navbar() {
                 </a>
             </li>
             <li>
-                <a href="/" className="nav-link">
+                <a href="../index.js" className="nav-link">
                     Foods
                 </a>
             </li>
