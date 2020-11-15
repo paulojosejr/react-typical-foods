@@ -14,7 +14,7 @@ export default function Navbar() {
                 </a>
             </li>
             <li>
-                <a href="../index.js" className="nav-link">
+                <a href="/" className="nav-link">
                     Foods
                 </a>
             </li>
