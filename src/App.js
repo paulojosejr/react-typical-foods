@@ -1,17 +1,21 @@
 import React, { Component } from 'react'
-import Navbar from './components/Navbar/Navbar'
 import './App.scss'
-import FoodList from './components/FoodList'
-import Home from './components/Home/Home'
+import { HashRouter } from 'react-router-dom'
+
+import Navbar from './components/Navbar/Navbar'
+import Routes from './Routes'
+import Footer from './components/Footer/Footer'
 
 class App extends Component {
   render() {
     return (
-      <main>
-        <Navbar />
-        <Home />
-        <FoodList />
-      </main>
+      <HashRouter>
+        <main>
+          <Navbar />
+          <Routes />
+          <Footer />
+        </main>
+      </HashRouter>
     )
   }
 }
